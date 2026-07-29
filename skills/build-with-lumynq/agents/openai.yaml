@@ -1,0 +1,7 @@
+interface:
+  display_name: Build with LumynQ
+  short_description: Design emotionally intelligent product experiences
+  default_prompt: Use $build-with-lumynq to design this product flow around the human
+    outcome and emotional shift it should create.
+policy:
+  allow_implicit_invocation: true
