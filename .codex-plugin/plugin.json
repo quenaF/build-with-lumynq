@@ -1,0 +1,40 @@
+{
+  "name": "build-with-lumynq",
+  "version": "0.1.0",
+  "description": "An open developer Skill for building software around human state, dignity, trust, and agency.",
+  "author": {
+    "name": "Quena Faine / LumynQ",
+    "url": "https://github.com/quenaF"
+  },
+  "homepage": "https://github.com/quenaF/build-with-lumynq",
+  "repository": "https://github.com/quenaF/build-with-lumynq",
+  "license": "MIT",
+  "keywords": [
+    "emotional-intelligence",
+    "human-centered-design",
+    "product-design",
+    "ai-agents",
+    "accessibility"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Build with LumynQ",
+    "shortDescription": "Build emotionally intelligent product experiences",
+    "longDescription": "Design, review, and prepare digital products that preserve truth, dignity, trust, accessibility, recovery, and meaningful choice.",
+    "developerName": "Quena Faine / LumynQ",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Product design",
+      "Experience review",
+      "Integration planning"
+    ],
+    "websiteURL": "https://github.com/quenaF/build-with-lumynq",
+    "defaultPrompt": [
+      "Review this product flow with Build with LumynQ.",
+      "Create a LumynQ Experience Map for this journey.",
+      "Assess this experience for trust and agency failures."
+    ],
+    "brandColor": "#6C63FF"
+  }
+}
+
