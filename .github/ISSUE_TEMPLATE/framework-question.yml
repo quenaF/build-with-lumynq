@@ -1,0 +1,34 @@
+name: Framework question
+description: Ask how a LumynQ principle applies or flag tension between principles.
+title: "[Framework]: "
+labels:
+  - question
+body:
+  - type: textarea
+    id: moment
+    attributes:
+      label: Product moment
+      description: Describe the concrete journey or decision where the question arose.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Framework question
+      description: Name the principle, boundary, or conflicting guidance you want clarified.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Available evidence
+      description: Label live, code, plan, inferred, and unknown evidence where applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: Why the answer matters
+      description: Explain what changes for a person's ability to act, understand, recover, decide, or retain choice.
+    validations:
+      required: true

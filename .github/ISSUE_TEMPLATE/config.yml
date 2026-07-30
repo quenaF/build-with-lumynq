@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public roadmap
+    url: https://github.com/quenaF/build-with-lumynq/blob/main/ROADMAP.md
+    about: Review current priorities and boundaries before proposing work.

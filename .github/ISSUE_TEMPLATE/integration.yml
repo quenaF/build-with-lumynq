@@ -1,0 +1,48 @@
+name: Integration proposal
+description: Propose a vendor-neutral agent, analytics, design, research, or developer-tool integration.
+title: "[Integration]: "
+labels:
+  - enhancement
+body:
+  - type: input
+    id: system
+    attributes:
+      label: System or format
+      placeholder: PostHog, MCP, JSON export, design tool, agent environment
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Human and developer outcome
+      description: What becomes possible, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: boundary
+    attributes:
+      label: Proposed boundary
+      description: What belongs in the open Skill, an adapter, a Domain Pack, or separate LumynQ tooling?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data, consent, and inference considerations
+      description: Identify inputs, provenance, retention, sensitive data, prohibited inferences, and user control.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation approach
+      description: How could the integration be tested without overstating emotional conclusions?
+    validations:
+      required: true
+  - type: checkboxes
+    id: neutral
+    attributes:
+      label: Compatibility
+      options:
+        - label: The proposal does not require the core Skill to become dependent on a single vendor.
+          required: true

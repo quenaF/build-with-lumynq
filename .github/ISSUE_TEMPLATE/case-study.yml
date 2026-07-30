@@ -1,0 +1,59 @@
+name: Case study
+description: Share a real, redacted use of Build with LumynQ and what changed.
+title: "[Case study]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Product and domain
+      placeholder: Anonymous applications platform — workforce
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode used
+      options:
+        - Build Mode
+        - Review Mode
+        - Integration Mode
+        - Multiple modes
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Initial experience and human consequence
+      description: Describe the consequential moment without exposing private data.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence available
+      description: Separate live, code, plan, user or owner statements, inference, and unknowns.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed
+      description: Describe product behavior, controls, language, tests, or policy changes.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome and validation
+      description: What was verified? What remains unknown? Include counter-evidence or a null result when relevant.
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Sharing permission
+      options:
+        - label: I have permission to share this redacted case and removed personal, confidential, and proprietary information.
+          required: true

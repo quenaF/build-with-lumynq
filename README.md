@@ -38,21 +38,14 @@ If a live review lacks the instruments needed to exercise consequential behavior
 
 ## Install
 
-### ChatGPT
+Download the versioned package from the [latest GitHub Release](https://github.com/quenaF/build-with-lumynq/releases/latest). The release asset is the recommended installation source because it is stable, versioned, and measurable.
 
-Download this repository as a ZIP, then install it as a plugin from ChatGPT’s Plugins interface.
+See [INSTALLATION.md](INSTALLATION.md) for tested folder layouts and installation steps for:
 
-### Codex
-
-Install from the repository:
-
-```text
-https://github.com/quenaF/build-with-lumynq
-```
-
-### Skill-only environments
-
-Copy `skills/build-with-lumynq/` into the environment’s Skills directory. Keep the folder structure intact so the Skill can load its references.
+- ChatGPT and Codex;
+- Replit Agent;
+- Claude Code;
+- other Agent Skills-compatible environments.
 
 ## Try it
 
@@ -74,8 +67,12 @@ Use Build with LumynQ to conduct a read-only live review. Separate live observat
 .
 ├── .codex-plugin/
 │   └── plugin.json
+├── .github/
+│   └── ISSUE_TEMPLATE/
 ├── examples/
-│   └── sample-review.md
+│   ├── 01-application-waiting-state-review.md
+│   ├── 02-workforce-marketplace-experience-map.md
+│   └── 03-assistant-correction-and-escalation.md
 ├── skills/
 │   └── build-with-lumynq/
 │       ├── agents/
@@ -83,7 +80,9 @@ Use Build with LumynQ to conduct a read-only live review. Separate live observat
 │       ├── references/
 │       └── SKILL.md
 ├── CONTRIBUTING.md
+├── INSTALLATION.md
 ├── LICENSE
+├── ROADMAP.md
 └── README.md
 ```
 
@@ -97,7 +96,7 @@ That loop—observe honestly, protect the human consequence, implement, test, an
 
 ## Version
 
-Current public release: **v0.1.0**
+Current public release: **v0.1.0**. See the [release notes and downloadable ZIP](https://github.com/quenaF/build-with-lumynq/releases/tag/v0.1.0).
 
 ## License and brand
 
@@ -109,3 +108,4 @@ The Skill is available under the [MIT License](LICENSE).
 
 Contributions are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request.
 
+See the [public roadmap](ROADMAP.md) for current priorities. Use the issue forms to report a bug, ask a framework question, propose an integration, or share a case study.
