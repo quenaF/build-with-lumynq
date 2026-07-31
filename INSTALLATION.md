@@ -53,7 +53,31 @@ Then open the project in Codex and invoke `Build with LumynQ` by name or ask for
 
 ## Replit Agent
 
-Replit project Skills live under `/.agents/skills`.
+Replit project Skills live under `/.agents/skills`. The recommended installation uses the community Skills CLI:
+
+```bash
+npx skills add quenaF/build-with-lumynq -a replit -s build-with-lumynq -y
+```
+
+This discovers the Skill from the public GitHub repository and copies it to:
+
+```text
+.agents/skills/build-with-lumynq/
+```
+
+Then ask Replit Agent:
+
+```text
+Use Build with LumynQ to review this project’s onboarding flow.
+```
+
+To inspect what the repository offers before installing:
+
+```bash
+npx skills add quenaF/build-with-lumynq --list
+```
+
+### Manual fallback
 
 1. Download and extract the release.
 2. Copy `skills/build-with-lumynq/` into your Replit project as:
@@ -65,7 +89,7 @@ Replit project Skills live under `/.agents/skills`.
 3. Confirm `.agents/skills/build-with-lumynq/SKILL.md` exists.
 4. Ask Replit Agent: `Use Build with LumynQ to review this project’s onboarding flow.`
 
-You can also use Replit’s Skills interface when it supports importing a Skill folder. Installing this GitHub package manually does not imply that it has been reviewed or listed by Replit.
+Community Skills are externally maintained and are not the same as Replit-built or audited directory Skills. Review the source and requested behavior before use.
 
 ## Claude Code
 
