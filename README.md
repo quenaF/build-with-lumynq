@@ -40,6 +40,12 @@ If a live review lacks the instruments needed to exercise consequential behavior
 
 Download the versioned package from the [latest GitHub Release](https://github.com/quenaF/build-with-lumynq/releases/latest). The release asset is the recommended installation source because it is stable, versioned, and measurable.
 
+For Replit Agent, install the community Skill directly from GitHub:
+
+```bash
+npx skills add quenaF/build-with-lumynq -a replit -s build-with-lumynq -y
+```
+
 See [INSTALLATION.md](INSTALLATION.md) for tested folder layouts and installation steps for:
 
 - ChatGPT and Codex;
