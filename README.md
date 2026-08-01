@@ -53,6 +53,17 @@ See [INSTALLATION.md](INSTALLATION.md) for tested folder layouts and installatio
 - Claude Code;
 - other Agent Skills-compatible environments.
 
+## Agent Bootstrap — Phase 2.x
+
+Installing Build with LumynQ teaches an agent the public method. Agent Bootstrap gives that agent a project's verified intent, promises, evidence sources, unknowns, governance, and human-approval boundaries before it changes the product.
+
+The two layers stay separate:
+
+- the public Skill remains versioned and reusable;
+- a project-owned `lumynq-project-bootstrap` Skill points to the project's canonical sources without copying them.
+
+Phase 2.0 is provisional and being dogfooded before CLI automation or certification claims. Read the [Agent Bootstrap Contract](AGENT_BOOTSTRAP.md) and inspect the [project bundle template](bootstrap/templates/lumynq-project-bootstrap/).
+
 ## Try it
 
 ```text
@@ -75,6 +86,9 @@ Use Build with LumynQ to conduct a read-only live review. Separate live observat
 │   └── plugin.json
 ├── .github/
 │   └── ISSUE_TEMPLATE/
+├── bootstrap/
+│   └── templates/
+│       └── lumynq-project-bootstrap/
 ├── examples/
 │   ├── 01-application-waiting-state-review.md
 │   ├── 02-workforce-marketplace-experience-map.md
@@ -85,6 +99,7 @@ Use Build with LumynQ to conduct a read-only live review. Separate live observat
 │       │   └── openai.yaml
 │       ├── references/
 │       └── SKILL.md
+├── AGENT_BOOTSTRAP.md
 ├── CONTRIBUTING.md
 ├── INSTALLATION.md
 ├── LICENSE
@@ -92,7 +107,7 @@ Use Build with LumynQ to conduct a read-only live review. Separate live observat
 └── README.md
 ```
 
-The installable Skill stays inside `skills/build-with-lumynq/`. Public documentation and examples remain outside it so agents load only what they need.
+The installable public Skill stays inside `skills/build-with-lumynq/`. Bootstrap templates, public documentation, and examples remain outside it so agents load only what they need and project-owned context cannot be mistaken for the reusable Skill.
 
 ## Proven in practice
 
@@ -103,6 +118,8 @@ That loop—observe honestly, protect the human consequence, implement, test, an
 ## Version
 
 Current public release: **v0.1.0**. See the [release notes and downloadable ZIP](https://github.com/quenaF/build-with-lumynq/releases/tag/v0.1.0).
+
+The Phase 2.0 Agent Bootstrap materials are an unreleased draft until dogfood evidence supports a versioned release.
 
 ## License and brand
 
